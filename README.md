@@ -19,6 +19,6 @@
 ## Authors
 **Suna Aregay**  
 GitHub: [@suna2km](https://github.com/suna2km)
-**Faith **
+**Faith Coufal**
 Github: []()
 
