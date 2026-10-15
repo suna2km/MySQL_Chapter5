@@ -26,3 +26,29 @@ SELECT * FROM customer_full_backup;
 
 -- Part 1.4 
 CHECKSUM TABLE customer, customer_full_backup;
+/********************************************************************
+Faith
+Exercise 2: Partial Table Backup
+• Part 2.1) Write three queries to determine the following:
+o 2.1.A How many records are in the rental table, and document
+o 2.1.B How many rentals have been returned (based on return_date) and document
+o 2.1.C How many rentals have NOT been returned (based on return_date), and document
+• Part 2.2) Write statements to create a partial backup of the rental table
+for all rentals that have been returned. Name your backup table returned_rental
+*****************************************************************************************/
+-- Part 2.1A
+SELECT * FROM rental;
+
+-- Part 2.1B
+SELECT * FROM rental
+WHERE return_date IS NOT NULL;
+
+-- Part 2.1C
+SELECT * FROM rental
+WHERE return_date IS NULL;
+
+-- Part 2.2
+CREATE TABLE returned_rental AS
+SELECT *
+FROM rental
+WHERE return_date IS NOT NULL;
