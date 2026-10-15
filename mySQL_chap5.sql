@@ -52,3 +52,32 @@ CREATE TABLE returned_rental AS
 SELECT *
 FROM rental
 WHERE return_date IS NOT NULL;
+/********************************************************************
+Suna
+Exercise 3: Drop Tables
+• Write one or two statements that will drop the backup tables from Exercise 1 and 2
+Verify both backup tables have been deleted by refreshing your schemas window
+*****************************************************************************************/
+DROP TABLE customer_full_backup, returned_rental;
+/********************************************************************
+Suna
+Exercise 4: Insert statement WITHOUT a column list
+• Part 4.1: Write multiple statements to setup yourself as a new customer with a new city and address
+o use DEFAULT for auto increment columns
+o use NULL for columns that allow null values
+o use DEFAULT for columns with default values
+
+*****************************************************************************************/
+INSERT INTO city VALUES 
+(DEFAULT, 'LA', 103, '2006-02-15' );
+
+SELECT * FROM city
+WHERE city_id = 601;
+
+INSERT INTO address VALUES 
+(DEFAULT, '1111 Main St.', NULL, 'Wayne', 601, NULL, 43526175846, '2006-02-15' );
+
+SELECT * FROM address
+WHERE city_id = 601;
+
+INSERT INTO customer VALUES 
