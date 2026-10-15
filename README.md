@@ -3,7 +3,7 @@
 - [Summary](#summary)
 - [Authors](#authors)
 - [New Concepts Used](#list-of-new-concepts-used)
-- [Console Output Example](#console-output-testing-as-images)
+- [Query 1](#query-1)
 
 ## Summary
 
