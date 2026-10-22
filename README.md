@@ -4,6 +4,10 @@
 - [Authors](#authors)
 - [New Concepts Used](#list-of-new-concepts-used)
 - [Query 1](#query-1)
+- [Query 2](#query-2)
+- [Query 4](#query-4)
+- [Query 7](#query-7)
+- [Query 8](#query-8)
 
 ## Summary
 This assignment creates a testing table of the Sakila database and changes rows from it. The final query deletes the testing table. 
