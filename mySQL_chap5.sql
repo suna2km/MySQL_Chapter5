@@ -129,3 +129,18 @@ WHERE customer_id = 609;
 
 SELECT * FROM customer
 WHERE address_id = 608;
+
+/********************************************************************
+Suna
+Exercise 7: Update multiple records (rows)
+• Part 7.1: Write one update statement that will update both new customer records
+changing their address id from 606 to 605. This will require you filtering by the address id = 606.
+• Part 7.2: Write a query to verify that both records have been correctly updated by filtering by address id (605)
+
+*****************************************************************************************/
+UPDATE customer
+SET address_id = 605
+WHERE address_id = 608;
+
+SELECT * FROM customer
+WHERE address_id = 605;
