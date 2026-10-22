@@ -144,3 +144,31 @@ WHERE address_id = 608;
 
 SELECT * FROM customer
 WHERE address_id = 605;
+/********************************************************************
+Suna
+Exercise 8: Write delete statements
+Note: use book_scripts/ch05/5-07 examples as a starting point
+• Part 8.1.A - Write a delete statement that delete the new city records using the city id = 601
+• Part 8.1.B - Write a delete statement that delete the new address records using the address id = 606
+• Part 8.1.C - Write a delete statement that delete the new customer records using the customer id = 600 & 601
+• Part 8.2 - Write a queries that verifies the records has been deleted.
+• Part 8.3 - Document your results and what you had to do to resolve the issue.
+
+*****************************************************************************************/
+DELETE FROM city
+WHERE city_id = 602;
+
+SELECT * FROM city
+WHERE city_id = 602;
+
+DELETE FROM address
+WHERE address_id = 608;
+
+SELECT * FROM address
+WHERE address_id = 608;
+
+DELETE FROM customer
+WHERE customer_id = 608 AND customer_id = 609;
+
+SELECT * FROM customer
+WHERE customer_id = 608 AND customer_id = 609;
