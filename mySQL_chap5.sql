@@ -81,3 +81,7 @@ SELECT * FROM address
 WHERE city_id = 601;
 
 INSERT INTO customer VALUES 
+(DEFAULT, 1, 'JOHN', 'SMITH', DEFAULT, 608, DEFAULT, '2006-02-15', DEFAULT );
+
+SELECT * FROM customer
+WHERE address_id = 608;
