@@ -30,7 +30,17 @@ This assignment creates a testing table of the Sakila database and changes rows 
 
 ![Query 4](Assets/chap5_query4.3.png)
 
+### Query 7
+![Query 7](Assets/chap5_query7.png)
 
+### Query 8
+![Query 8](Assets/chap5_query8.png)
+
+![Query 8.1b](Assets/chap5_query8.1b.png)
+
+![Query 8.2b](Assets/chap5_query8.2b.png)
+
+![Query 8.2c](Assets/chap5_query8.2c.png)
 
 ## Authors
 **Suna Aregay**  
