@@ -20,7 +20,9 @@ This assignment creates a testing table of the Sakila database and changes rows 
 
 ### Query 2
 ![Query 2.1A](Assets/chap5_query2.1A.png)
+
 ![Query 2.1B](Assets/chap5_query2.1B.png)
+
 ![Query 2.1C](Assets/chap5_query2.1C.png)
 
 
