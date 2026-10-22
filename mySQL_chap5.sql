@@ -83,5 +83,22 @@ WHERE city_id = 601;
 INSERT INTO customer VALUES 
 (DEFAULT, 1, 'JOHN', 'SMITH', DEFAULT, 608, DEFAULT, '2006-02-15', DEFAULT );
 
+/********************************************************************
+Faith
+Exercise 5: Insert statement using a column list
+• Part 5.1: Write a statement to setup insert another new customer with the same address id 606
+o Also use the same last name as the previous insert statement
+o OMIT all columns that are auto increment, defaults, and nullable columns
+• Part 5.2: Write a query to prove the new customer was created by filtering on address id 606
+This should have created customer id = 601
+
+*****************************************************************************************/
+
+INSERT INTO customer (store_id, first_name, last_name, address_id, create_date) VALUES 
+(1, 'MARY', 'SMITH', 608, '2006-02-15');
+
+SELECT * FROM customer
+WHERE address_id = 608;
+
 SELECT * FROM customer
 WHERE address_id = 608;
