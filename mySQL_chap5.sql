@@ -102,3 +102,30 @@ WHERE address_id = 608;
 
 SELECT * FROM customer
 WHERE address_id = 608;
+
+/********************************************************************
+Faith
+Exercise 6: Update multiple columns for a single record
+Note: use book_scripts/ch05/5-05 examples as a starting point
+Write the following update statements:
+• Part 6.1 - update your first new customer record by changing it's store id = 2 and email address
+use the customer id (600) to update only one record
+• Part 6.2 - update your second new customer record by changing it's store id = 2 and email address
+use the customer id (601) to update only one record
+• Part 6.3 - write a query to verify the two records have been correctly update
+use the address id (606) to retrieve both records
+
+*****************************************************************************************/
+
+UPDATE customer
+SET store_id = 2, 
+    email = 'JeanClaudeIDoNotNameTheGoons'
+WHERE customer_id = 608;
+
+UPDATE customer
+SET store_id = 2, 
+    email = 'MrStacioandMrPis'
+WHERE customer_id = 609;
+
+SELECT * FROM customer
+WHERE address_id = 608;
